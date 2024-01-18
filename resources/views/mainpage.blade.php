@@ -82,7 +82,7 @@
                                                         </button>
                                                     </div>
                                                     <div class="modal-body">
-                                                        <form action="{{ url('hapusfoto/'.$g->id_galery) }}" method="get" enctype="multipart/form-data">
+                                                        <form action="{{ url('hapusfoto/'.$g->id_galery) }}" method="DELETE" enctype="multipart/form-data">
                                                             @csrf
                                                             <p>Yakin Ingin Menghapus?</p>
                                                         </div>

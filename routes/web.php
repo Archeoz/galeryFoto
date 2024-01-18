@@ -29,4 +29,4 @@ Route::get('mainpage',[GaleryController::class, 'mainpage'])->middleware('auth')
 
 Route::post('uploadfoto',[GaleryController::class, 'uploadfoto']);
 Route::post('editfoto/{id_galery}',[GaleryController::class, 'editfoto']);
-Route::get('hapusfoto/{id_galery}',[GaleryController::class, 'hapusfoto']);
+Route::delete('hapusfoto/{id_galery}',[GaleryController::class, 'hapusfoto']);
